@@ -13,7 +13,7 @@ python -m part12.app
 
 ## What to implement (ToDos)
 ToDo 0 is in `part12/models.py`. Normalization and stemming will most likely be implemented there as well.  
-You may create new modules, classes, and functions and restructure the code as you see fit.
+You may create new modules, classes, and functions and restructure the code as you see fit. **Or just start with your implementation of part 11 instead!**
 
 0. First, **copy/redo** your implementation from Part 11. Move your solution for the **four ToDos** to the `models.py` module.
 
