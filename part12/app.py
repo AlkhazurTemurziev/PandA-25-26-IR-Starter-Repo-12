@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Part 10 starter.
+Part 12 starter.
 
-WHAT'S NEW IN PART 10
-You will write two classes without detailed instructions! This is a refactoring, we are not adding new functionality 🙄.
+WHAT'S NEW IN PART 12
+Added normalization and stemming to the search!
 """
 from typing import List
 import time
@@ -12,6 +12,7 @@ from .constants import BANNER, HELP
 from .models import SearchResult, Searcher
 
 from .file_utilities import load_config, load_sonnets, settings
+
 
 def print_results(
     query: str | None,
@@ -87,12 +88,12 @@ def main() -> None:
 
         results = searcher.search(raw, config.search_mode)
 
-        # Initialize elapsed_ms to contain the number of milliseconds the query evaluation took
         elapsed_ms = (time.perf_counter() - start) * 1000
 
         highlight_mode = config.hl_mode if config.highlight else None
 
         print_results(raw, results, highlight_mode, elapsed_ms)
+
 
 if __name__ == "__main__":
     main()
